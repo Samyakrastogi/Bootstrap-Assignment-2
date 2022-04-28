@@ -5,55 +5,471 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+   
+      <!-- Bootstrap Font Icon CSS -->
+      <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><nav class="navbar navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./Logo.jpg" alt="" width="30" height="34">
-              </a>
-            </div>
-          </nav></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Covid-19 Assistace</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Claims</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  All Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white navbar-fixed-top" >
+      <a class="navbar-brand" style="margin-left: 30px;" href="#">
+        <nav class="navbar navbar-light bg-white">
+          <a class="navbar-brand ms-5 border shadow pe-4 ps-4  " href="#">
+            <img src=".//assests/Logo.png"  width="50" height="70" alt="">
+          </a>
+        </nav>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mt-4  me-2 fs-5 " style="color: #264a9f; font-family: 'Poppins', sans-serif; margin-right: 80px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">All Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="#">Motor</a></li>
+              <li><a class="dropdown-item" href="#">Travel</a></li>
+              <li><a class="dropdown-item" href="#">Health</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item " style=" margin-right: 20px;">
+            <a class="nav-link mt-4 fs-5" href="#" style="color: #264a9f;  font-family: 'Poppins', sans-serif;"> COVID-19 Assistance</a>
+          </li>
+          <li class="nav-item" style=" margin-right: 20px;">
+            <a class="nav-link mt-4 fs-5 " href="#" style="color: #264a9f; font-family: 'Poppins', sans-serif;">Claims</a>
+          </li>
+          <li class="nav-item" style=" margin-right: 20px;">
+            <a class="nav-link mt-4 fs-5 " href="#" style="color: #264a9f; font-family: 'Poppins', sans-serif;">Support</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link   mt-4  fs-5 shadow pe-4 ps-4   mb-3 " style="background-color: rgba(236,237,241,255); border-radius: 50px; color:#264a9f; margin-right: 150px; ;" href="#" tabindex="-1" aria-disabled="false"><i class="bi-person" style="margin-right:8px ; font-size: 20px;"></i>Self-Service</a>
+          </li>
+         
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section-1 -->
+
+    <!-- <div class="container overflow-hidden">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3  bg-white" style="width: 600px; height: 600px;"><h2>Become an agent</h2> <p>By becoming an Insurance Agent, you can contribute towards your family’s financial prosperity and also have the opportunity to impact other people’s lives positively.</p></div>
+        </div>
+        <div class="col">
+          <div class="p-3  bg-white"><img src="assests\tata_aig_claims_process_2dd9469361.svg" style="width: 600px; height: 600px;" alt=""></div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="card" style="width: 100%; flex-direction: row; border-style: none;">
+      
+      <div class="card-body">
+        <h2 class="card-title" style="margin-left: 110px;color: #264a9f; margin-top: 60px; font-size: 2rem; font-family: 'Poppins', sans-serif;">Become an Agent</h2>
+        <p class="card-text" style="margin-left: 110px;margin-right: 40px; color: #264a9f; margin-top: 15px; font-size: 0.9em; font-family: 'Poppins', sans-serif; ">By becoming an Insurance Agent, you can contribute towards your family’s financial prosperity and also have the opportunity to impact other people’s lives positively.</p>
+        
+      </div>
+      <img src="assests\tata_aig_claims_process_2dd9469361.svg" style="width: 30%; margin-right: 160px;" class="card-img-top" alt="...">
+    </div>
+
+    <p style="font-size: 15px; font-family:'Poppins', sans-serif;  margin-left: 133px;color: #264a9f; margin-top: 100px; margin-bottom: 10px;">Get associated with Tata AIG by sharing few of the contact details to get back:</p>
+    
+    <!-- form -->
+
+    <div class="form shadow pe-4 ps-4" style="width:80%; margin-left:130px; height: 450xp; background-color: #eaebef; border-radius: 30px; padding: 60px;" >
+      <!-- <div class="mb-2">
+        <label for="formGroupExampleInput" class="form-label">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+      </div> 
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+      </div>  -->
+
+      <div class="row g-3">
+        <p style="font-family:'Poppins', sans-serif; color: #264a9f; font-size: 30px; font-weight: 700;">Details Required</p>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Title</label>
+              <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+                  <option selected>Select</option>
+                  <option value="1">Mr.</option>
+                  <option value="2">Mrs.</option>
+              </select>
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;"class="form-label">First Name</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="First Name" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Last Name</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Last name" aria-label="First name">
+        </div>
+        
+      </div>  
+      <div class="row g-3">
+        <div class="col">
+          <label for="formGroupExampleInput"  style="margin-left: 40px; color: #a8afc2;" class="form-label">Phone Number</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;" style="border-radius: 60px;" class="form-control" id="formGroupExampleInput" placeholder="Phone Number" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Alternate Mobile Number</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Mobile Number" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Email</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Email" aria-label="First name">
+        </div>
+        
+      </div>  
+      <div class="row g-3">
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">City</label>
+          <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7; " class="form-control" id="formGroupExampleInput" placeholder="City" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">State</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1">Andhra Pradesh</option>
+            <option value="2">Delhi</option>
+            <option value="2">Punjab</option>
+            <option value="2">Uttar Pradesh</option>
+            <option value="2">Jammu And Kashmir</option>
+            <option value="2">Tamil Nadu</option>
+            <option value="2">Gujarat</option>
+            <option value="2">Rajasthan</option>
+        </select>
+          <!-- <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">New to Industry</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+          <!-- <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+        
+      </div>  
+      <div class="row g-3">
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Current Company Working With</label>
+          <input type="text"  style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Current Company" aria-label="First name">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Job Type</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1">Full Time</option>
+            <option value="2">Part Time</option>
+        </select>
+          <!-- <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Are You Associated With</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1">Mutual Fund</option>
+            <option value="2">Life Insurance</option>
+            <option value="3">General Insurance</option>
+        </select>
+          <!-- <input type="text"style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+        
+      </div>  
+      <div class="row g-3">
+        <div class="col-4">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Line Of Business</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1">Travel</option>
+            <option value="2">Motor</option>
+            <option value="3">Health</option>
+        </select>
+          <!-- <input type="text"  style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+        <div class="col-4">
+          <label for="formGroupExampleInput" style="margin-left: 40px; color: #a8afc2;" class="form-label">Annual Business Potential</label>
+          <select class="form-select" aria-label="Default select example" style="border-radius: 60px; height: 60px; padding-left: 50px; opacity: 0.7;">
+            <option selected>Select</option>
+            <option value="1"> <=6 lakhs</option>
+            <option value="2">  6-12 Lakhs</option>
+            <option value="3"> 12-18 Lakhs</option>
+        </select>
+          <!-- <input type="text" style="border-radius: 60px; height: 60px; padding-left: 50px;opacity: 0.7;" class="form-control" id="formGroupExampleInput" placeholder="Select" aria-label="First name"> -->
+        </div>
+      </div>  
+
+      <button type="submit" class="shadow pe-4 ps-4  " style="width: 350px; margin-top: 30px; height: 60px; font-size: 20px; color: #bcd3e7; border-style: none;border-radius: 50px; background-color: #264a9f; ">Proceed</button>
+      <h6 style="margin-top: 10px; color: #a8afc2; margin-left: 20px;">By clicking proceed, I agree to override my DNCR</h6>
+
+
+    </div>
+
+    <!-- section-2 -->
+
+    <div class="acb" style="background-color: #f4f5fb; height: 500px;">
+      <div class="heading" style="text-align: center; margin-top: 30px;"><h2 style="padding-left: 50px; padding-top: 50px; padding-right: 50px; color: #264a9f;">Why You Should Join Tata AIG</h2></div>
+      <div class="row" style="flex-direction: row; padding: 60px;">
+        <div class="col-sm-3" style="border-right: 2px dotted lightgrey;">
+          <div class="card " style="background-color:  #f4f5fb; border-style: none;" >
+            <div class="card-body" style="text-align: center;">
+              <div class="image" style="background-color: #f4f5fb; border-radius: 80%; padding: 20px;border-color: #b8bbcd;margin-left: 80px; width:max-content; border-style:solid;">
+                <img src="https://www.tataaig.com/s3/001_verified_06addff7a2.svg"  alt="">
+              </div> 
+              <p class="card-text" style="font-size: 14px; margin-top: 30px; margin-left: 30px; color:#264a9f;">Secure your customers with India’s most trusted brand, Tata AIG</p>
+              <div class="vl"></div>
+            </div>
           </div>
         </div>
-      </nav>
- 
+        <div class="col-sm-3" style="border-right: 2px dotted lightgrey;" >
+          <div class="card " style="background-color:  #f4f5fb; border-style: none;" >
+            <div class="card-body" style="text-align: center;">
+              <div class="image" style="background-color: #f4f5fb; border-radius: 80%; padding: 20px;border-color: #b8bbcd;margin-left: 80px; text-align: center; width:max-content; border-style: solid;">
+                <img src="https://www.tataaig.com/s3/Group_13820_d10fd32bdb.svg" alt="">
+              </div> 
+              <p class="card-text" style="font-size: 13px; margin-top: 30px;margin-left: 30px; color: #264a9f;">At Tata AIG we keep our values first i.e. PEOPLE, EMPATHY, INTEGRITY, CUSTOMER FIRST</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3" style="border-right: 2px dotted lightgrey;">
+          <div class="card " style="background-color:  #f4f5fb; border-style: none;" >
+            <div class="card-body" style="text-align: center;">
+              <div class="image" style="background-color: #f4f5fb; border-radius: 80%; padding: 20px;border-color: #b8bbcd;margin-left: 80px; text-align: center; width:max-content; border-style: solid;">
+                <img src="https://www.tataaig.com/s3/Group_13823_ed0b1c2869.svg" alt="">
+              </div> 
+              <p class="card-text" style="font-size: 14px; margin-top: 30px;margin-left: 30px; color: #264a9f; ">You can look for long term association and growth in your career</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3" >
+          <div class="card " style="background-color:  #f4f5fb;border-style: none;" >
+            <div class="card-body" style="text-align: center;">
+              <div class="image" style="background-color: #f4f5fb; border-radius: 80%; padding: 20px;border-color: #b8bbcd;margin-left: 80px; text-align: center; width:max-content; border-style: solid;">
+                <img src="https://www.tataaig.com/s3/Group_13824_2128ec5b97.svg" alt="">
+              </div> 
+              <p class="card-text" style="font-size: 14px; margin-top: 30px;margin-left: 30px; color: #264a9f;">Great earning opportunity along with recognition for your hard work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- section-3 -->
+
+    <div class="card" style="width: 100%; flex-direction: row; border-style: none;height: 600px;">
+      
+      <div class="card-body">
+        <p class="card-title" style="margin-left: 120px;color: #264a9f; margin-top: 60px; font-size: 30px; font-family: 'Poppins', sans-serif;">What Tata AIG offers you?</p>
+        <p class="card-text" style="margin-left: 120px;margin-right: 20px; margin-top: 8px; font-size: 14px; font-family: 'Poppins', sans-serif; "><i class="bi bi-check-circle" style="font-size: 30px;margin-right: 10px;vertical-align: middle; "></i>Learning opportunity for you with our exclusive Tata AIG Academy which <span style="margin-left: 40px;align-items: center;"> helps you to enhance your skills </span></p>
+        <p class="card-text" style="margin-left: 120px;margin-right: 20px; margin-top: 8px; font-size: 14px; font-family: 'Poppins', sans-serif; "><i class="bi bi-check-circle" style="font-size: 30px;margin-right: 10px;vertical-align: middle; "></i>Claim servicing in need is what customer buys & at Tata AIG customer <span style="margin-left: 40px;align-items: center;"> claim are serviced by an experienced in-house claims management team</span> </p>
+        <p class="card-text" style="margin-left: 120px;margin-right: 20px; margin-top: 8px; font-size: 14px; font-family: 'Poppins', sans-serif; "><i class="bi bi-check-circle" style="font-size: 30px;margin-right: 10px;vertical-align: middle; "></i>Comprehensive product solutions – Motor , Health, Travel & Corporate risk <span style="margin-left: 40px;align-items: center;"> solutions </span></p>
+        <p class="card-text" style="margin-left: 120px;margin-right: 20px; margin-top: 8px; font-size: 14px; font-family: 'Poppins', sans-serif; "><i class="bi bi-check-circle" style="font-size: 30px;margin-right: 10px;vertical-align: middle ;"></i>Business development support and handhold at each progressive step</p>
+        
+      </div>
+      <img src=".//assests/phone-logo.svg" style="width: 33%; margin-right: 100px; margin-top: 40px;" class="card-img-top" alt="...">
+    </div>
+
+    <!-- tree -->
+
+    <div class="break" style="border: 0.5px dotted black ; margin-bottom:20px; width:90% ; margin-left:5%;"></div>
+
+
+    
+
+    <!-- icon footer  -->
+    <div class="iconfooter shadow" style="width: 90%; margin-left: 5%; border-radius: 20px; margin-bottom: 60px;">
+<footer class="text-center shadow text-lg-start bg-light text-muted" style="border-radius: 20px;">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between "
+  >
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src=".//assests/Logo.png" alt="" style="height: 50px; width: 50px;">
+          </h6>
+          <p style="font-size: 13px;">
+            Download our App
+          </p>
+          <img src=".//assests/google.png"  style="height: 40px; width: 120px; display: block; " alt="">
+          <img src="./assests/apple.webp"  style="height: 40px; width: 120px; margin-top: 10px;" alt="">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text  mb-4" style="color: #264a9f; font-weight: 400;">
+            Company
+          </h6>
+          <p style="font-size: 10px;">
+            <p style="color: #4e5263;">About Us</p>
+          </p>
+          <p style="font-size: 10px;">
+            <p style="color: #4e5263;">Public Disclosures</p>
+          </p>
+          <p style="font-size: 10px;">
+            <p style="color: #4e5263;">Contact Us</p>
+          </p>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Careers</p>
+          </p>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Agent Registration</p>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text mb-4" style="color: #264a9f; font-weight: 400;">
+            Resources
+          </h6>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Blog</p>
+          </p>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Insurance FAQs</p>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text mb-4" style="color: #264a9f; font-weight: 400;">
+            Services
+          </h6>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Renewals</p>
+          </p>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Self Service</p>
+          </p>
+          <p style=" font-size: 10px;">
+            <p style="color: #4e5263;">Vehicle Inspection</p>
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-left p-4 bg-light" style="margin-left: 3%; font-size: 15px;">
+    Follow Us:
+    <br>
+    <i class="bi bi-facebook" style="font-size: 30px; margin: 10px;"></i>
+    <i class="bi bi-linkedin" style="font-size: 30px; margin: 10px;"></i>
+    <i class="bi bi-twitter" style="font-size: 30px;margin: 10px;"></i>
+    <i class="bi bi-instagram" style="font-size: 30px;margin: 10px;"></i>
+    <i class="bi bi-youtube" style="font-size: 30px;margin: 10px;"></i>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+
+<div class="container bg-light shadow" style=" border-radius: 10px; height: 70px; text-align:center; margin-bottom: 40px; ">
+  <div class="row">
+    <div class="col" style="margin-top: 20px;">
+      Health Insurance
+    </div>
+    <div class="col" style="margin-top: 20px;">
+      Motor Insurance
+    </div>
+    <div class="col" style="margin-top: 20px;">
+      Travel Insurance
+    </div>
+    <div class="col" style="margin-top: 20px;">
+      Other Insurance
+    </div>
+  </div>
+</div>
+        
+    <!-- footer -->
+    <div class="container-fluid px-0">
+      <div class="row" style="background-color:#18478b">
+       <div class="container">
+        <div class="mt-3 border-bottom text-white" style="font-size: smaller;">
+         <div class=" py-3 text-center" style="overflow:hidden">
+          <div>
+           <a class=" px-2 text-white" href="#" rel="noreferrer" target="_self">
+            Disclaimer
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            Terms of Use
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            Downloads
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_blank">
+            IRDAI
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            GST Registration Numbers
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            Privacy Policy
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            Grievance Redressal Policy
+           </a>
+           <a class=" px-2 text-white border-right" href="#" rel="noreferrer" target="_self">
+            General
+           </a>
+          </div>
+         </div>
+         <hr width="80%" style="margin-left: 10%; border-top: 2px; border-style: dotted;">
+         <div class=" text-white text-center" style="font-size: smaller;">
+          <p>
+           2008, Tata AIG General Insurance Company Limited, all rights reserved.
+           <br/>
+           Registered Office : Peninsula Business Park, Tower A, 15th Floor, G.K.Marg, Lower Parel, Mumbai - 400 013, Maharashtra, India. CINNumber : U85110MH2000PLC128425.
+           <br/>
+           Registered with IRDA of India Regn. No. 108. Category of Certificate of Registration: General Insurance. Insurance is the subject matter of the solicitation.
+           <br/>
+           For more details on benefits, exclusions, limitations, terms and conditions, please read sales brochure / policy wording carefully before concluding a sale.
+           <br/>
+           Toll Free Number : 1800 266 7780 / 1800 22 9966 (only for senior citizen policy holders). Email Id –
+           <a href="#">
+            customersupport@tataaig.com
+           </a>
+           .
+          </p>
+         </div>
 
 </body>
 </html>
